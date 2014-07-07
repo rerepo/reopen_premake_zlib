@@ -5,7 +5,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := libz
 
-LOCAL_PREMAKE_CONFIG_CMD := if [ ! -f $(LOCAL_PATH)/configure.log ]; then cd $(LOCAL_PATH); ./configure --prefix=$(HOME)/opt/arm; fi
+LOCAL_PREMAKE_CONFIG_CMD := if [ ! -f $(LOCAL_PATH)/configure.log ]; then cd $(LOCAL_PATH); ./configure --prefix=$(TOPPREFIX)/premake/install; fi
 
 LOCAL_PREMAKE_MAKE_CMD := -C $(LOCAL_PATH)
 
